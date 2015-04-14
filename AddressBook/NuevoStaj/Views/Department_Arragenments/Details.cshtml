@@ -1,0 +1,34 @@
+﻿@model NuevoStaj.Models.Department_Arragenments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Department_Arragenments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Departments.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departments.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Managers.Manager_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Managers.Manager_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Arrangement_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

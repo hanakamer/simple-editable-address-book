@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using Microsoft.AspNet.Identity
+<div class="jumbotron">
+
+   
+@if (User.Identity.GetUserName() == "hana@hana.com")
+{<p class="lead">
+        @Html.ActionLink("Employee Management", "Index", "Employees")<br />
+        @Html.ActionLink("Manager Management", "Index", "Managers")<br />
+        @Html.ActionLink("Department Management", "Index", "Departments")<br />
+        @Html.ActionLink("Department Arrangements", "Index", "Department_Arragenments")<br /><br />
+        @Html.ActionLink("CHANGE PASSWORD", "ChangePassword", "Manage")<br />
+    </p>}
+
+else
+{
+    <p class="lead">
+        @Html.ActionLink("Addressbook", "Index", "Employees")
+    </p>
+        @Html.ActionLink("Log in to manage the fields", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+       }
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b0ef87ee02964b448f9b5305830faa6d" Name="Diagram1">
+        <EntityTypeShape EntityType="NuevoModel.Department_Arragenments" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="NuevoModel.Departments" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NuevoModel.Employees" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NuevoModel.Managers" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NuevoModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="NuevoModel.FK_Department_Arragenments_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="NuevoModel.FK_Department_Arragenments_Managers" ManuallyRouted="false" />
+        <AssociationConnector Association="NuevoModel.FK_Employees_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="NuevoModel.FK_Managers_Employees" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
